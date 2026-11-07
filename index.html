@@ -1,90 +1,150 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-mood="linen">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Fluency Training Library — Updated November 5, 2026 | Rion Robinson &amp; Dan Martell 2026 AI Stack</title>
-  <meta name="description" content="Interactive AI Fluency Training Library updated as of November 5, 2026. Complete 22-tool operating stack, 35-to-22 stack migration audit, role-based playbooks, and SOP training labs." />
+  <title>AI Fluency Training Library — Studio Edition (Updated Nov 5, 2026) | Rion Robinson</title>
+  <meta name="description" content="An inviting, human-centered AI Fluency Training Library curated for Rion Robinson (The Integration Co.) and updated from Dan Martell's 22-Tool 2026 AI Stack as of November 5, 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Sticky Editorial Masthead -->
+  <!-- Sticky Studio Masthead -->
   <header class="masthead" id="site-masthead">
     <div class="container masthead-inner">
       <a href="#top" class="brand-group" id="brand-home-link">
-        <div class="brand-mark">AF</div>
-        <div class="brand-titles">
-          <span class="brand-name">AI Fluency Training Library</span>
-          <span class="brand-sub">The Integration Co. · Rion Robinson</span>
+        <div class="brand-mark">R·</div>
+        <div>
+          <span class="brand-name">AI Fluency · Training Library</span>
+          <span class="brand-sub">Rion Robinson · The Integration Co. · Updated Nov 5, 2026</span>
         </div>
       </a>
 
       <nav class="primary-nav" aria-label="Primary Navigation" id="primary-nav">
+        <a href="#stack-directory" class="nav-link" id="nav-directory">[01–22] The Stack</a>
         <a href="#whats-changed" class="nav-link" id="nav-shifts">Nov 2026 Shifts</a>
-        <a href="#stack-directory" class="nav-link" id="nav-directory">22-Tool Stack</a>
         <a href="#role-playbooks" class="nav-link" id="nav-playbooks">Role Playbooks</a>
         <a href="#migration-audit" class="nav-link" id="nav-migration">35 → 22 Audit</a>
-        <a href="#fluency-diagnostic" class="nav-link" id="nav-diagnostic">Fluency Scorecard</a>
+        <a href="#fluency-diagnostic" class="nav-link" id="nav-diagnostic">Scorecard</a>
       </nav>
 
       <div class="masthead-actions">
-        <span class="edition-stamp" id="edition-badge">Updated Nov 5, 2026</span>
-        <button type="button" class="btn-icon" id="btn-theme-toggle" aria-label="Toggle color theme">☾ Dark Mode</button>
+        <button type="button" class="btn-about-trigger" id="btn-about-philosophy">Why This List Exists</button>
+        <button type="button" class="btn-mood" id="btn-mood-toggle" aria-label="Switch studio mood">
+          <span aria-hidden="true">✌️</span> <span id="mood-label">Mood: Linen Studio</span>
+        </button>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero Section -->
+    <!-- Inviting Studio Hero with Interactive Inline Logo Story & Framed Photography -->
     <section class="hero" id="hero-section">
       <div class="container hero-grid">
         <div>
-          <p class="hero-kicker">Operational Field Guide &amp; Curriculum · November 5, 2026 Edition</p>
-          <h1 class="hero-title">From Playing With AI Tools to Running an AI Operating System.</h1>
-          <p class="hero-lead">
-            Fully updated against <strong>Dan Martell’s 2026 AI Tech Stack</strong> as of <strong>November 5, 2026</strong>.
-            The stack has consolidated from 35 experimental tools down to <strong>22 high-leverage daily drivers</strong>—led by
-            <strong>Codex (#1)</strong> for outcome execution, <strong>Grok Bot (#2)</strong> for repeatable AI teammates,
-            <strong>Apex (#9)</strong> for shared business memory, and <strong>Precision (#16)</strong> for operator-led deployment.
-          </p>
+          <div class="hero-eyebrow">
+            <span>[2026 Field Manual]</span>
+            <span>·</span>
+            <span>Dan Martell’s 22 Verified Tools</span>
+          </div>
+
+          <h1 class="hero-title">
+            Stop playing with AI.<br />
+            Build a <em>human-centered</em> operating system.
+          </h1>
+
+          <div class="hero-manifesto" id="hero-manifesto">
+            <!-- Populated dynamically with interactive inline logo chips -->
+          </div>
+
           <div class="hero-cta-row">
-            <a href="#stack-directory" class="btn-primary" id="hero-cta-explore">Explore the 22 Active Tools ↓</a>
-            <a href="#migration-audit" class="btn-secondary" id="hero-cta-audit">View 35 → 22 Delta Audit</a>
-            <a href="#role-playbooks" class="btn-secondary" id="hero-cta-playbooks">Role Playbooks</a>
+            <a href="#stack-directory" class="btn-primary" id="hero-cta-explore">Explore [01–22] Studio Index ↓</a>
+            <button type="button" class="btn-secondary" id="hero-cta-view-switch">Switch to [01] Editorial Index View</button>
+            <a href="#migration-audit" class="btn-secondary" id="hero-cta-audit">35 → 22 Delta Audit</a>
           </div>
         </div>
 
-        <aside class="hero-ledger" aria-label="November 5, 2026 Stack Briefing">
-          <div class="ledger-header">
-            <span class="ledger-title">Stack Revision Ledger</span>
-            <span class="ledger-date">As of Nov 5, 2026</span>
+        <aside class="hero-visual-frame" aria-label="Studio Visual Showcase">
+          <div class="hero-photo-wrap">
+            <img id="hero-studio-photo" alt="Warm sunlit creative studio desk with field notebooks and architectural objects" />
           </div>
-          <div class="ledger-stats">
-            <div class="stat-cell">
-              <div class="stat-value">22</div>
-              <div class="stat-label">Active Core Tools (Down from 35)</div>
-            </div>
-            <div class="stat-cell">
-              <div class="stat-value">#1 → #2</div>
-              <div class="stat-label">Codex (#1) + Grok Bot (#2) Daily Drivers</div>
-            </div>
-            <div class="stat-cell">
-              <div class="stat-value">5 New</div>
-              <div class="stat-label">Grok Bot, Perplexity, Hermes, Winly, TopicFinder</div>
-            </div>
-            <div class="stat-cell">
-              <div class="stat-value">19 Sunset</div>
-              <div class="stat-label">Zapier, Make, n8n, Manus, OpenClaw, Revio &amp; more</div>
-            </div>
+          <div class="hero-floating-dock">
+            <div class="dock-logos" id="hero-dock-logos"></div>
+            <span class="dock-caption">22 Active Tools · Click any logo to open Lab</span>
           </div>
-          <p class="ledger-note">
-            <strong>Core Philosophy:</strong> Give your AI the outcome, the shared business context, and a clear
-            <em>Definition of Done</em>. Every tool below includes an interactive <strong>Training Lab &amp; copyable SOP template</strong>.
-          </p>
         </aside>
+      </div>
+    </section>
+
+    <!-- Continuous Logo & Tool Marquee Strip (Inspired by adriangnzl.es) -->
+    <div class="marquee-band" aria-label="2026 AI Tech Stack Marquee">
+      <div class="marquee-track" id="studio-marquee-track"></div>
+    </div>
+
+    <!-- Interactive 22-Tool Directory & Visual Category Showcase -->
+    <section class="section" id="stack-directory">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow">[01 — 22] Curated Stack &amp; Training Labs</p>
+            <h2 class="section-title">Every Tool Earned Its Spot by Moving the Needle.</h2>
+            <p class="section-desc">
+              Organized by the job each tool does best. Choose a visual discipline below, toggle between
+              <strong>Studio Cards</strong> and the <strong>[01] Editorial Index</strong>, or click any tool to slide open its hands-on Training Lab &amp; SOP.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Visual Category Cards with Editorial Photography -->
+        <div class="visual-categories-grid" id="visual-categories-grid"></div>
+
+        <!-- Filter & View Mode Bar -->
+        <div class="controls-bar" id="directory-controls">
+          <div class="controls-top">
+            <div class="search-wrap">
+              <input
+                type="search"
+                id="tool-search-input"
+                class="search-input"
+                placeholder="Search by tool, workflow, 'Codex', 'Shared Memory', 'DM CRM', 'Voice'..."
+                aria-label="Search tools in the 2026 AI stack"
+              />
+            </div>
+
+            <div class="controls-right">
+              <select id="status-filter-select" class="filter-select" aria-label="Filter by November 2026 update status">
+                <option value="ALL">All 22 Active Tools</option>
+                <option value="NEW">New &amp; Promoted in Nov 2026 (6)</option>
+                <option value="REPOSITIONED">Repositioned / Updated Scope (4)</option>
+                <option value="VENTURE">Ventures Portfolio / Partner (6)</option>
+              </select>
+
+              <div class="view-toggle-group" role="group" aria-label="Directory View Mode">
+                <button type="button" class="view-toggle-btn active" id="btn-view-cards" data-view="cards">Studio Cards</button>
+                <button type="button" class="view-toggle-btn" id="btn-view-index" data-view="index">[01] Index List</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+            <div class="category-pills" role="tablist" aria-label="Filter by tool category">
+              <button type="button" class="cat-pill active" id="pill-all" data-category="ALL">All [22]</button>
+              <button type="button" class="cat-pill" id="pill-agents" data-category="Chatbots & AI Agents">Chatbots &amp; AI Agents [10]</button>
+              <button type="button" class="cat-pill" id="pill-productivity" data-category="Productivity & Knowledge">Productivity &amp; Knowledge [03]</button>
+              <button type="button" class="cat-pill" id="pill-business" data-category="Business Tools">Business Tools [04]</button>
+              <button type="button" class="cat-pill" id="pill-content" data-category="Content Creation">Content Creation [03]</button>
+              <button type="button" class="cat-pill" id="pill-building" data-category="Apps and Building">Apps &amp; Building [02]</button>
+            </div>
+            <div id="results-summary" style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted);">
+              Showing 22 of 22 active tools
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Directory Stage (Cards Grid OR [01]–[22] Editorial Index) -->
+        <div id="directory-stage"></div>
       </div>
     </section>
 
@@ -94,66 +154,14 @@
         <div class="section-header">
           <div>
             <p class="section-eyebrow">Executive Changelog · November 5, 2026</p>
-            <h2 class="section-title">What Changed in the 2026 AI Tech Stack</h2>
+            <h2 class="section-title">What Changed Since the 35-Tool Edition</h2>
             <p class="section-desc">
-              A lot has changed since the earlier 35-tool edition. Here are the 6 structural shifts every founder, leader, and operator needs to update in their training and daily workflows.
+              A lot has changed since this document was first published. The stack was pruned from 35 experimental tools across 9 categories down to 22 essential tools across 5 core categories.
             </p>
           </div>
         </div>
 
         <div class="shifts-grid" id="shifts-grid"></div>
-      </div>
-    </section>
-
-    <!-- Interactive 22-Tool Directory & Training Labs -->
-    <section class="section" id="stack-directory">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <p class="section-eyebrow">Complete 2026 Operating Stack</p>
-            <h2 class="section-title">The 22 Verified Tools &amp; Hands-On Training Labs</h2>
-            <p class="section-desc">
-              Organized by the job each tool does best. Click <strong>Open Training Lab &amp; SOP</strong> on any card for a step-by-step team exercise and ready-to-use prompt template.
-            </p>
-          </div>
-        </div>
-
-        <div class="controls-bar" id="directory-controls">
-          <div class="controls-top">
-            <div class="search-wrap">
-              <input
-                type="search"
-                id="tool-search-input"
-                class="search-input"
-                placeholder="Search tools, use cases, 'Codex', 'Shared Memory', 'DM CRM', 'Voice'..."
-                aria-label="Search tools in the 2026 AI stack"
-              />
-            </div>
-
-            <div class="filter-select-group">
-              <label for="status-filter-select" style="font-size: 0.82rem; font-weight: 600; color: var(--text-secondary);">Audit Status:</label>
-              <select id="status-filter-select" class="filter-select" aria-label="Filter by November 2026 update status">
-                <option value="ALL">All 22 Active Tools</option>
-                <option value="NEW">New &amp; Promoted in Nov 2026 (6)</option>
-                <option value="REPOSITIONED">Repositioned / Updated Scope (4)</option>
-                <option value="VENTURE">Dan Martell Ventures Portfolio / Partner (6)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="category-pills" role="tablist" aria-label="Filter by tool category">
-            <button type="button" class="cat-pill active" id="pill-all" data-category="ALL">All Categories (22)</button>
-            <button type="button" class="cat-pill" id="pill-agents" data-category="Chatbots & AI Agents">Chatbots &amp; AI Agents (10)</button>
-            <button type="button" class="cat-pill" id="pill-productivity" data-category="Productivity & Knowledge">Productivity &amp; Knowledge (3)</button>
-            <button type="button" class="cat-pill" id="pill-business" data-category="Business Tools">Business Tools (4)</button>
-            <button type="button" class="cat-pill" id="pill-content" data-category="Content Creation">Content Creation (3)</button>
-            <button type="button" class="cat-pill" id="pill-building" data-category="Apps and Building">Apps &amp; Building (2)</button>
-          </div>
-
-          <div class="results-summary" id="results-summary">Showing 22 of 22 active tools in the November 5, 2026 stack</div>
-        </div>
-
-        <div class="tools-grid" id="tools-grid"></div>
       </div>
     </section>
 
@@ -165,7 +173,7 @@
             <p class="section-eyebrow">Human-Centered Lean AI · The Integration Method™</p>
             <h2 class="section-title">Role-Based Curriculum &amp; Workflow Playbooks</h2>
             <p class="section-desc">
-              Tools don’t create ROI—repeatable workflows and leader formation do. Select a functional lane below to view how the 22 tools sequence together.
+              Select your functional lane to see how the 22 tools sequence into a simple, repeatable operating system.
             </p>
           </div>
         </div>
@@ -183,9 +191,9 @@
         <div class="section-header">
           <div>
             <p class="section-eyebrow">Curriculum Maintenance Audit</p>
-            <h2 class="section-title">Sunsetted &amp; Consolidated Tools (35-Tool → 22-Tool Edition)</h2>
+            <h2 class="section-title">19 Sunsetted &amp; Consolidated Tools (35 → 22 Migration)</h2>
             <p class="section-desc">
-              If your team or previous training modules still reference these 19 legacy entries from the earlier 2026 list, use this migration table to transition to the current November 5, 2026 standard.
+              Use this migration ledger to update any legacy training decks or workflows that still reference tools from the earlier 35-tool edition.
             </p>
           </div>
         </div>
@@ -194,10 +202,10 @@
           <table style="width: 100%; border-collapse: collapse; text-align: left;">
             <thead>
               <tr style="background-color: var(--bg-elevated); font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">
-                <th style="padding: 0.8rem 0.85rem; border-bottom: 1px solid var(--border-subtle);">Prior Rank</th>
-                <th style="padding: 0.8rem 0.85rem; border-bottom: 1px solid var(--border-subtle);">Sunsetted / Consolidated Tool</th>
-                <th style="padding: 0.8rem 0.85rem; border-bottom: 1px solid var(--border-subtle);">Prior Category</th>
-                <th style="padding: 0.8rem 0.85rem; border-bottom: 1px solid var(--border-subtle);">November 5, 2026 Replacement Path</th>
+                <th style="padding: 0.85rem 1rem; border-bottom: 1px solid var(--border-subtle);">Prior #</th>
+                <th style="padding: 0.85rem 1rem; border-bottom: 1px solid var(--border-subtle);">Sunsetted / Consolidated Tool</th>
+                <th style="padding: 0.85rem 1rem; border-bottom: 1px solid var(--border-subtle);">Prior Category</th>
+                <th style="padding: 0.85rem 1rem; border-bottom: 1px solid var(--border-subtle);">November 5, 2026 Replacement Path</th>
               </tr>
             </thead>
             <tbody id="sunsetted-tbody"></tbody>
@@ -235,7 +243,7 @@
     </section>
   </main>
 
-  <!-- Interactive Training Lab Modal -->
+  <!-- Slide-Over Studio Drawer Modal ("Cerrar ✕") -->
   <div class="modal-backdrop" id="tool-modal" role="dialog" aria-modal="true" aria-labelledby="tool-modal-content">
     <div class="modal-card" id="tool-modal-content"></div>
   </div>
@@ -244,10 +252,10 @@
   <footer class="site-footer" id="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong>AI Fluency Training Library</strong> · Updated November 5, 2026 · Curated for Rion Robinson (The Integration Co. / Integrate AI)
+        <strong>AI Fluency Training Library</strong> · Studio Edition (Updated Nov 5, 2026) · Rion Robinson &amp; The Integration Co.
       </div>
       <div>
-        Based on <em>Dan Martell’s 2026 AI Stack — 22 Tools I Use, Test, and Recommend</em> (Elite AI Advisory Program)
+        Source: <em>Dan Martell’s 2026 AI Stack — 22 Tools I Use, Test, and Recommend</em> · ©2026
       </div>
     </div>
   </footer>
